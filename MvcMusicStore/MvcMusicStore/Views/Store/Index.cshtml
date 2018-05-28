@@ -1,0 +1,21 @@
+﻿@model IEnumerable<MvcMusicStore.Models.Gen>
+@{
+    ViewBag.Title = "Store";
+}
+<h3>Przeglądaj gatunki</h3>
+<p>
+    Wybierz tutaj z  @Model.Count()
+    gatunków:
+</p>
+<ul>
+    <li>
+        <a href="/Store/Browse?genre=Disco">Disco</a>
+    </li>
+    <li>
+        <a href="/Store/Browse?genre=Jazz">Jazz</a>
+    </li>
+    <li>
+        <a href="/Store/Browse?genre=Rock">Rock</a>
+    </li>
+</ul>
+
